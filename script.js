@@ -6,7 +6,10 @@ const vid2 = document.querySelector('#video2');
 const vid1 = document.querySelector('#video1');
 const body = document.body;
 const weatherinfo = document.querySelector('.weather-info-container');
-
+const lastSearch = localStorage.getItem('lastSearch');
+if (lastSearch) {
+    getWeather(lastSearch); // Load last searched city on page load
+} 
 searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -14,6 +17,8 @@ searchForm.addEventListener('submit', (event) => {
 
     if (cityName) {
         getWeather(cityName);
+        localStorage.setItem('lastSearch', cityName); // Save last searched city
+        cityInput.value = ''; // Clear input after search
     } else {
         alert('กรุณาป้อนชื่อเมือง');
     }

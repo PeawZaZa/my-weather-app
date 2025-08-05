@@ -95,6 +95,7 @@ h1 { color: #00A6FB; }
 body.Daytime {
     #search-form button { background-color: rgba(0, 174, 255, 0); color: #292929; }
     #search-form button:hover { background-color: rgb(0, 146, 255); color:#ffffff; }
+    #city-input { background: rgba(255, 255, 255, 0.5); color: #292929; border: 1px solid #006494; }
     
 }
 #search-form button:hover { background-color: rgb(13, 146, 255); }

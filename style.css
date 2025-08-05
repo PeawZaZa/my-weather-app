@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: 'MC';
-    src: url('./Fonts/MCBold.otf');
+    src: url('./Fonts/MCbold.otf');
     font-weight: bold;
     font-style: normal;
 }
@@ -18,7 +18,7 @@
 }
 @font-face {
     font-family: 'MC';
-    src: url('./Fonts/MC-BoldItalic.otf');
+    src: url('./Fonts/MCboldItalic.otf');
     font-weight: bold;
     font-style: italic;
 }

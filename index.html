@@ -6,15 +6,25 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="Daytime">
+
+    <video autoplay loop muted playsinline class="background-video" id="video1">
+        <source src="Video/Day.mp4" type="video/mp4">
+    </video>
+    <video autoplay loop muted playsinline class="background-video hidden" id="video2">
+        <source src="Video/Night.mp4" type="video/mp4">
+    </video>
+
     <div class="app-container">
-        <h1>Weather App</h1>
-        <form id="search-form">
-            <input type="text" id="city-input" placeholder="ค้นหาชื่อเมือง..." required>
-            <button type="submit">ค้นหา</button>
-        </form>
-        <div id="weather-info-container" class="weather-info">
+        <div class="transparent-container">
+            <h1>Weather App</h1>
+            <form id="search-form">
+                <input type="text" id="city-input" placeholder="ค้นหาชื่อเมือง..." required>
+                <button type="submit">ค้นหา</button>
+            </form>
+            <div id="weather-info-container" class="weather-info">
             <!-- ข้อมูลสภาพอากาศจะแสดงที่นี่ -->
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
